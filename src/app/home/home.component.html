@@ -1,0 +1,118 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bookstore</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <style>
+    body {
+      background-image: url('assets/4.jpg');
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+    }
+
+    .container {
+      position: relative;
+      height: 100vh;
+      /* background-color: rgba(0, 0, 0, 0.7); */
+    }
+
+    .text-container {
+      position: absolute;
+      top: 50%;
+      left: 10%;
+      transform: translateY(-50%);
+      background-color: rgba(0, 0, 0, 0.7);
+      opacity: 0.6;
+      padding-left: 5%;
+      padding-right: 5%;
+    }
+
+    .text-container h1 {
+      color: white;
+      font-size: 4rem;
+    }
+
+    .text-container p {
+      color: white;
+      font-size: 1.2rem;
+      margin-top: 10px;
+    }
+
+    .header {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      background-color: rgba(0, 0, 0, 0.7);
+      padding: 10px 10px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      z-index: 999;
+    }
+
+    .header .logo img {
+      width: 100px;
+      margin-right: 10px;
+    }
+
+    .header .logo-container {
+      display: flex;
+      align-items: center;
+    }
+
+    .header .nav-links {
+      list-style: none;
+      display: flex;
+      align-items: center;
+      margin: 0;
+      padding: 0;
+    }
+
+    .header .nav-links li {
+      margin-right: 20px;
+    }
+
+    .header .nav-links li a {
+      color: white;
+      text-decoration: none;
+    }
+
+    .header .nav-links li a.btn {
+      border-radius: 12px;
+      padding: 8px 16px;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="header">
+    <div class="logo-container">
+      <div class="logo"><img src="assets/2.png" alt="Logo"></div>
+    </div>
+    <ul class="nav-links">
+      <li><a routerLink="login" class="btn btn-dark">Login</a></li>
+      <li><a routerLink="register" class="btn btn-dark">Register</a></li>
+    </ul>
+  </div>
+
+  <div class="container">
+    <div class="text-container">
+      <h1>Bookstore</h1>
+      <p>Welcome to Bookpedia!<br> Your go-to destination for all things literary!
+         We take pride in offering a vast collection of books that cater to diverse tastes and interests. Whether you're a passionate reader, a curious learner, 
+        or simply looking for a great gift, we've got you covered.</p>
+    </div>
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+
+</html>
+<app-home1></app-home1>
